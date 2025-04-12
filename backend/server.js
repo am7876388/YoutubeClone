@@ -16,7 +16,7 @@ dotenv.config();
 // Database connection function
 const connectDB = async () => {
     try {
-        const connectionInstance = await mongoose.connect(process.env.MONGODB_URI);
+        const connectionInstance = await mongoose.connect('mongodb+srv://p502345:hGwDweRfkeNlpkPJ@cluster0.jk3nc.mongodb.net/YouTube');
         console.log(`MongoDB connected !! DB HOST : ${connectionInstance.connection.host}`);
     } catch (error) {
         console.error("Error connecting to database:", error);
